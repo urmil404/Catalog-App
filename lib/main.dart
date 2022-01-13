@@ -12,7 +12,7 @@ class myApp extends StatelessWidget {
     return MaterialApp(
       home: Material(
           child: Center(
-        child:Container(
+        child: Container(
           child: Text("Welcome to 30 days of flutter"),
         ),
       )),
