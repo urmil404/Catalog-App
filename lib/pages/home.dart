@@ -11,7 +11,7 @@ class homePage extends StatelessWidget {
         title: Text(
           "Catalog App",
           style: TextStyle(
-            color: Colors.yellow,
+            color: Colors.white,
             fontWeight: FontWeight.bold,
           ),
         ),
