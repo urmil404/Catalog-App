@@ -16,7 +16,8 @@ class myApp extends StatelessWidget {
     bringVegetables(thaila: true, rupees: 50);
     return MaterialApp(
       // home: homePage(),
-      themeMode: ThemeMode.light,
+      debugShowCheckedModeBanner: false,
+      themeMode: ThemeMode.dark,
       theme: ThemeData(
         fontFamily: GoogleFonts.lato().fontFamily,
         primarySwatch: Colors.deepPurple,

@@ -16,11 +16,27 @@ class homePage extends StatelessWidget {
           ),
         ),
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.camera),
+            label: 'Camera',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.chat),
+            label: 'Messages',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.group),
+            label: 'Groups',
+          ),
+        ],
+      ),
       body: Center(
         child: Container(
           child: Text(
             "Welcome to $days days of flutter with $name",
-            style: TextStyle(color: Colors.pink[600],fontSize: 20),
+            style: TextStyle(color: Colors.pink[600], fontSize: 20),
           ),
         ),
       ),
