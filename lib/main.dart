@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_catalog/pages/login_page.dart';
+import 'package:flutter_catalog/utils/routes.dart';
 import 'pages/home.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -15,7 +16,8 @@ class myApp extends StatelessWidget {
     bringVegetables(thaila: true, rupees: 50);
     return MaterialApp(
       // home: homePage(),
-      themeMode: ThemeMode.light,
+      debugShowCheckedModeBanner: false,
+      themeMode: ThemeMode.dark,
       theme: ThemeData(
         fontFamily: GoogleFonts.lato().fontFamily,
         primarySwatch: Colors.deepPurple,
@@ -24,8 +26,8 @@ class myApp extends StatelessWidget {
       initialRoute: "/",
       routes: {
         "/": (context) => LoginPage(),
-        "/home": (context) => homePage(),
-        "/login": (context) => LoginPage()
+        MyRoutes.homeRoute: (context) => homePage(),
+        MyRoutes.loginRoute: (context) => LoginPage()
       },
     );
   }

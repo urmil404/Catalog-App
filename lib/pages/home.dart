@@ -11,16 +11,32 @@ class homePage extends StatelessWidget {
         title: Text(
           "Catalog App",
           style: TextStyle(
-            color: Colors.yellow,
+            color: Colors.white,
             fontWeight: FontWeight.bold,
           ),
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.camera),
+            label: 'Camera',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.chat),
+            label: 'Messages',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.group),
+            label: 'Groups',
+          ),
+        ],
       ),
       body: Center(
         child: Container(
           child: Text(
             "Welcome to $days days of flutter with $name",
-            style: TextStyle(fontSize: 25),
+            style: TextStyle(color: Colors.pink[600], fontSize: 20),
           ),
         ),
       ),
